@@ -36,8 +36,9 @@ getRandommeal();
 // Randombutton.on('click', getRandommeal)
 
 // function to launch the jokes modal
-function launchJokesModal (){
-    console.log("launch jokes modal")
+function launchJokesModal (event){
+    event.preventDefault();
+    console.log("launch jokes modal");
 }
 
 // event listener for modal launch button
