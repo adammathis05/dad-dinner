@@ -6,4 +6,39 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  .header {
+    min-height: 50px;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background:#3C1518 ;
+  }
   
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+
+    min-height: 50px;
+    align-content: flex-end;
+    bottom: 0;
+    color: white;
+    background:#3C1518 ;
+    display: block;
+   text-align: center;
+  }
