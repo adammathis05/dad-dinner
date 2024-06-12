@@ -27,10 +27,18 @@ function getRandommeal() {
     }
 
     })
-}
+};
 
 
 getRandommeal();
 
 
 // Randombutton.on('click', getRandommeal)
+
+// function to launch the jokes modal
+function launchJokesModal (){
+    console.log("launch jokes modal")
+}
+
+// event listener for modal launch button
+$('#jokesButton').on('click', launchJokesModal);
