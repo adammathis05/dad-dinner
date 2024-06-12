@@ -28,6 +28,12 @@ function getRandommeal() {
 
     })
 }
+function redirectHome() {
+    const homeurl = './index.html';
+    window.location.replace(homeurl)
+}
+
+header.getElementById("homeButton").addEventListener("click", redirectHome);
 
 
 getRandommeal();
