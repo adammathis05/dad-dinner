@@ -75,34 +75,43 @@ function launchJokesModal (event){
     event.preventDefault();
     console.log("launch jokes modal");
 
-    const jokeCard = createJokeCard();
-    
-    renderJokeCard(jokeCard);
-    getJokes();
+    const jokesArray = getJokes();
+    const jokesCardArray = createJokeCard(jokesArray);
+    renderJokeCard(jokesCardArray);
 }
 
 // function to create joke card
-function createJokeCard () {
+function createJokeCard (jokesArray) {
 
-    console.log("create Joke Card");
+    let jokesCardArray = [];
+
+    for (i =0; i < jokesArray.length; i++) {
+
+        console.log("create Joke Card");
+        
+        const jokeCard = $('<div>')
+            .addClass("card");
+        
+        const jokeContent = $('<div>') 
+            .addClass('card-body')
+            .text(jokesArray.i);
+
+        jokeCard.append(jokeContent);
+
+        jokesCardArray.push(jokeCard);
+    }
+    return jokesCardArray;
     
-    const jokeCard = $('<div>')
-        .addClass("card");
-    
-    const jokeContent = $('<div>') 
-        .addClass('card-body')
-        .text('A Joke!');
-
-    jokeCard.append(jokeContent);
-
-    return jokeCard;
 }
 
 // function to render joke card
-function renderJokeCard (jokeCard) {
+function renderJokeCard (jokesCardArray) {
     const jokesCardContainer = $('#jokesModalBody');
 
-    jokesCardContainer.append(jokeCard);
+    for (i = 0; i < jokesCardArray.length; index++) {
+        jokesCardContainer.append(jokeCard);
+    }
+
 }
 
 function getJokes () {
@@ -130,9 +139,12 @@ function getJokes () {
             
             jokesArray.push(joke);    
 
-            console.log(jokesArray);
+            //console.log("jokes 1", jokesArray);
         })
     }
+
+    console.log ("jokesArray", jokesArray)
+    return jokesArray;
 }
 
 // USER INTERACTIONS
