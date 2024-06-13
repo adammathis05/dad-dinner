@@ -69,16 +69,64 @@ header.getElementById("homeButton").addEventListener("click", redirectHome);
 
 getRandommeal();
 
+// function to launch the jokes modal
+function launchJokesModal (event){
+
+    event.preventDefault();
+    console.log("launch jokes modal");
+
+    const jokeCard = createJokeCard();
+    
+    renderJokeCard(jokeCard);
+    getJokes();
+}
+
+// function to create joke card
+function createJokeCard () {
+
+    console.log("create Joke Card");
+    
+    const jokeCard = $('<div>')
+        .addClass("card");
+    
+    const jokeContent = $('<div>') 
+        .addClass('card-body')
+        .text('A Joke!');
+
+    jokeCard.append(jokeContent);
+
+    return jokeCard;
+}
+
+// function to render joke card
+function renderJokeCard (jokeCard) {
+    const jokesCardContainer = $('#jokesModalBody');
+
+    jokesCardContainer.append(jokeCard);
+}
+
+function getJokes () {
+    const requestJokesUrl = 'https://icanhazdadjoke.com/';
+    console.log("get jokes");
+
+    fetch(requestJokesUrl, {
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data.joke);
+    })
+}
 
 // USER INTERACTIONS
 
 Randombutton.on('click', getRandommeal)
 
-// function to launch the jokes modal
-function launchJokesModal (event){
-    event.preventDefault();
-    console.log("launch jokes modal");
-}
+
 
 // event listener for modal launch button
 $('#jokesButton').on('click', launchJokesModal);
