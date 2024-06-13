@@ -78,6 +78,7 @@ function launchJokesModal (event){
     const jokeCard = createJokeCard();
     
     renderJokeCard(jokeCard);
+    getJokes();
 }
 
 // function to create joke card
@@ -102,6 +103,23 @@ function renderJokeCard (jokeCard) {
     const jokesCardContainer = $('#jokesModalBody');
 
     jokesCardContainer.append(jokeCard);
+}
+
+function getJokes () {
+    const requestJokesUrl = 'https://icanhazdadjoke.com/';
+    console.log("get jokes");
+
+    fetch(requestJokesUrl, {
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data.joke);
+    })
 }
 
 // USER INTERACTIONS
