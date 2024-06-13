@@ -49,6 +49,7 @@ function redirectHome() {
 Randombutton.on('click', redirectPageRandom)
 ingredientFormEl.on('submit', redirectPageIngridient)
 
+
 // function to launch the jokes modal
 function launchJokesModal (event){
 
@@ -151,6 +152,7 @@ function clearJokesCardContainer () {
 
 // event listener for modal launch button
 $('#jokesButton').on('click', launchJokesModal);
+
 
 // event listener for modal close button
 $('#jokesClose').on('click', clearJokesCardContainer);
