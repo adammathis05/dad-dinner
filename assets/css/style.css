@@ -46,18 +46,30 @@ img {
 
 }
 
+mark.pageTitle {
+  font-weight: bold;
+  background-color: transparent;
+
+}
+
+
 .titleText {
   display: flex;
-  margin-top: 100px;
-  margin-left: 250px;
-  margin-right: 250px;
+  flex-wrap: wrap;
+  margin-top: 75px;
+  margin-left: 200px;
+  margin-right: 200px;
   margin-bottom: 50px;
-  border: solid 5px #3C1518;
+  justify-content: center;
+  /* border: solid 5px #3C1518; */
   /* border-radius: 25%; */
 }
 
 .headerText {
+  color: #3C1518;
+  text-shadow: 1px 1px 2px rgb(1, 0, 0), 0 0 1em rgb(197, 197, 202), 0 0 0.2em rgb(255, 179, 0);  font-weight: bolder;
   display: flex;
+  flex-wrap: wrap;
   padding: 35px;
 
 }
@@ -106,7 +118,8 @@ footer {
   align-content: flex-end;
   bottom: 0;
   color: white;
-  background: #3C1518;
+  background-image: linear-gradient(#1d080a 19%, #3C1518 75%);
+
   display: block;
   text-align: center;
 }
