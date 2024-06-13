@@ -14,16 +14,18 @@
 </head>
 
 <body>
-    <header class="header"><img src=assets\images\logo.png alt="dad's dinner logo" class="center" width="25%"
-            height="25%"></header>
-    <h2 class="center">
-        Welcome to Dad’s Dinner! Take some stress out of your day and get a recipe using what’s in your fridge and
-        recipe themed dad jokes to keep the kids entertained while you cook!
-    </h2>
-
-
+    <header class = "topBar">
+        <div class="headerImg"><img src=assets\images\logo.png alt="dad's dinner logo">
+        </div>
+    </header>
+    <div class = "titleText">
+        <h3 class = "headerText">
+            Welcome to Dad’s Dinner! Take some stress out of your day and get a recipe using what’s in your fridge and
+            recipe themed dad jokes to keep the kids entertained while you cook!
+        </h3>
+    </div>
     
-    <div>
+    <div class = "formInput">
         <form id="ingredientForm">
             <div class="form-group">
                 <label for="ingredient-input">What's in Your Fridge?</label>
@@ -32,7 +34,7 @@
             <button id="search" type="submit" class="btn btn-primary">Search</button>
            
         </form>
-        <button id="randomize" type="submit" class="btn btn-primary">Randomize Me!</button>
+        <button id="randomize" type="submit" class="btn btn-warning">Randomize Me!</button>
     </div>
 
     <footer><h3>Created by team Awesome</h3></footer>
