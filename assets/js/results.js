@@ -1,4 +1,7 @@
 // DEPENDENCIES
+const returnHome = document.getElementById('goBack');
+
+
 
 
 // DATA
@@ -20,7 +23,10 @@ function homeRedirect() {
 
 // USER INTERACTIONS 
 
+returnHome.addEventListener('click', () => {
+    homeRedirect()
 
+});
 
 
 
