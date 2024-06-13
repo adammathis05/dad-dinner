@@ -1,32 +1,32 @@
-// DEPENDENCIES
-const returnHome = document.getElementById('goBack');
+// // DEPENDENCIES
+// const returnHome = document.getElementById('goBack');
 
 
 
 
-// DATA
+// // DATA
 
 
 
 
 
 
-// FUNCTIONS
+// // FUNCTIONS
 
-function homeRedirect() {
-    window.location.href="index.html";
+// function homeRedirect() {
+//     window.location.href="index.html";
 
-}
-
-
+// }
 
 
-// USER INTERACTIONS 
 
-returnHome.addEventListener('click', () => {
-    homeRedirect()
 
-});
+// // USER INTERACTIONS 
+
+// returnHome.addEventListener('click', () => {
+//     homeRedirect()
+
+// });
 
 
 
