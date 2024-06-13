@@ -1,0 +1,15 @@
+.button{
+    border :none;
+    margin: 0;
+    padding: 0;
+}
+
+  .header {
+    min-height: 50px;
+    padding: 20px;
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    background:#3C1518 ;
+  }
+  
