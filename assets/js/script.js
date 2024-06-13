@@ -1,3 +1,6 @@
+// DEPENDENCIES
+
+
 // fetch('https://www.themealdb.com/api/json/v1/1/random.php') 
 //     .then(function(response) {
 //         return response.json(); 
@@ -8,6 +11,10 @@
 //       // testing fetch request  
     const Randombutton = $('#randomize')
     const Recipecontainer=$('#recipes')
+
+// FUNCTIONS
+
+
 
 function getRandommeal() {
     const requestURL = 'https://www.themealdb.com/api/json/v1/1/random.php'
@@ -53,5 +60,7 @@ function getRandommeal() {
 
 getRandommeal();
 
+
+// USER INTERACTIONS
 
 Randombutton.on('click', getRandommeal)
