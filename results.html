@@ -11,7 +11,11 @@
     <title>Results Page</title>
 
 </head>
-<header></header>
+<header>
+    <button id="goBack">&#8678; Return Home</button>
+
+
+</header>
 
 <body class="container">
     <div class="row">
@@ -24,7 +28,29 @@
 
         <div id="jokes-container" class="col-sm">
             <h2>"Dad Jokes"</h2>
-            <div id="jokes" class="col"></div>
+            <div id="jokes" class="col">
+                <!-- Button trigger modal -->
+                <button id="jokesButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jokesModal">
+                    Make these kids laugh!
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="jokesModal" tabindex="-1" aria-labelledby="jokesModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="jokesModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id=jokesModalBody class="modal-body">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
