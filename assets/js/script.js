@@ -8,14 +8,23 @@
 //       // testing fetch request  
     const Randombutton = $('#randomize')
     const Recipecontainer=$('#recipes')
+    const RecipeURL= './recipe.html'
+
+    function redirectPage(){
+        document.location.replace(RecipeURL);
+        getRandommeal()
+    }
+    
+ 
 
 function getRandommeal() {
     const requestURL = 'https://www.themealdb.com/api/json/v1/1/random.php'
     fetch(requestURL)
     .then(function(response){
         return response.json();
+
     })
-    .then(function(data) {
+    then(function(data) {
         console.log(data.meals);
     for(let i =0; i<data.length;i++){
         RecipeCard = $('<div>')
@@ -54,4 +63,4 @@ function getRandommeal() {
 getRandommeal();
 
 
-Randombutton.on('click', getRandommeal)
+Randombutton.on('click', redirectPage)
