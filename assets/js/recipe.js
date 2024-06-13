@@ -143,8 +143,6 @@ function getRandommeal() {
 
 ingredientFunc();
 // displayRecipes();
-=======
-=======
 const homepageURL = "/index.html"
 const homeButton = document.getElementById('homebutton')
 
