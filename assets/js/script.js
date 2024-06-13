@@ -38,9 +38,7 @@
         getIngredientsList();
     }
 
-  })
 
-}
 function redirectHome() {
     const homeurl = './index.html';
     window.location.replace(homeurl)
