@@ -11,31 +11,35 @@
 //       // testing fetch request  
     const Randombutton = $('#randomize')
     const ingredientFormEl = $('#ingredientForm')
-    const ingredientInput =$('#form-content')
+    const ingredientInput =$('#ingredient-input')
     const searchButton = $('#search')
     
     const RecipeURL= './recipe.html'
-
+    let mode ='' 
     function redirectPageRandom(event){
         event.preventDefault();
         console.log("Did I work?")
-        
-        // window.location.replace(RecipeURL)
+        localStorage.setItem('random',mode)
+     // window.location.replace(RecipeURL)
         $(location).attr('href', RecipeURL)
         // document.location.replace(RecipeURL);
         getRandommeal()
     }
     function redirectPageIngridient(event) {
         event.preventDefault();
-        localStorage.setItem('ingredientInput.value', JSON.stringify(ingredientFormEl.value))
+        console.log(ingredientInput.val())
+        localStorage.setItem('input', mode)
+        localStorage.setItem('ingredientInput', ingredientInput.val())
 
         $(location).attr('href', RecipeURL)
 
-        ingredientFunc() 
+        ingredientFunc();
+        displayRecipes();
+        getIngredientsList();
     }
 
 
-Randombutton.on('submit', redirectPageRandom)
+Randombutton.on('click', redirectPageRandom)
 ingredientFormEl.on('submit', redirectPageIngridient)
 
 // function to launch the jokes modal
@@ -93,7 +97,7 @@ function getJokes () {
 
 // USER INTERACTIONS
 
-Randombutton.on('click', getRandommeal)
+
 
 
 

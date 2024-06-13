@@ -1,5 +1,10 @@
-<<<<<<< HEAD
 // const Recipecontainer= $('#recipes')
+if(localStorage.getItem(mode)=== 'random') {
+getRandommeal();
+}
+else {
+    ingredientFunc();
+}
 
 function getRandommeal() {
     const requestURL = 'https://www.themealdb.com/api/json/v1/1/random.php'
@@ -46,19 +51,19 @@ function getRandommeal() {
 }
 
 
-getRandommeal();
+// getRandommeal(); 
 
 
 
 
-    const randomButton = document.getElementById('randomize');
+
     const recipeContainer = document.getElementById('recipes');
     let displayedRecipes = new Set(); // Track displayed recipe IDs
 
     function ingredientFunc(){
         
 
-        const ingredient =   JSON.parse(localStorage.getItem('ingredientInput.value'))
+        const ingredient =   localStorage.getItem('ingredientInput')
         // ingredientInput.value.trim();
         if (ingredient) {
             fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient}`)
@@ -71,6 +76,7 @@ getRandommeal();
                             .then(mealData => mealData.meals[0]);
                     });
                     Promise.all(mealPromises).then(meals => {
+                        
                         meals.forEach(meal => displayedRecipes.add(meal.idMeal)); // Add new recipes to the set
                         displayRecipes(meals);
                     });
@@ -134,14 +140,5 @@ getRandommeal();
         }
         return ingredients;
     }
-=======
-const homepageURL = "/index.html"
-const homeButton = document.getElementById('homebutton')
-
-function redirectHome() {
-  const homeurl = './index.html';
-   window.location.replace(homeurl)}
-
-homebutton.addEventListener('click', redirectHome)
-
->>>>>>> main
+ingredientFunc();
+// displayRecipes();
