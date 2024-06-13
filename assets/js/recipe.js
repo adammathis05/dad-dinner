@@ -5,5 +5,5 @@ function redirectHome() {
   const homeurl = './index.html';
    window.location.replace(homeurl)}
 
-homebutton.addEventListener('click', redirectHome)
+//homebutton.addEventListener('click', redirectHome)
 

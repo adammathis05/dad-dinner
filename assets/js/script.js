@@ -62,9 +62,9 @@ function redirectHome() {
     window.location.replace(homeurl)
 }
 
-header.getElementById("homeButton").addEventListener("click", redirectHome);
-=======
-};
+//header.getElementById("homeButton").addEventListener("click", redirectHome);
+//=======
+//};
 
 
 getRandommeal();
@@ -107,19 +107,32 @@ function renderJokeCard (jokeCard) {
 
 function getJokes () {
     const requestJokesUrl = 'https://icanhazdadjoke.com/';
+    //set a maximum number of jokes to pull and display
+    const maxJokes = 5;
+
+    const jokesArray = [];
+
     console.log("get jokes");
 
-    fetch(requestJokesUrl, {
-        headers: {
-            'Accept': 'application/json'
-        }
-    })
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data) {
-        console.log(data.joke);
-    })
+    for (i = 0; i < maxJokes; i++) {
+
+        fetch(requestJokesUrl, {
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data) {
+
+            const joke = data.joke;
+            
+            jokesArray.push(joke);    
+
+            console.log(jokesArray);
+        })
+    }
 }
 
 // USER INTERACTIONS
