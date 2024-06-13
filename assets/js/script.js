@@ -75,9 +75,11 @@ function launchJokesModal (event){
     event.preventDefault();
     console.log("launch jokes modal");
 
-    const jokesArray = getJokes();
-    const jokesCardArray = createJokeCard(jokesArray);
-    renderJokeCard(jokesCardArray);
+    getJokes()
+        .then(jokesArray => {
+            const jokesCardArray = createJokeCard(jokesArray);
+            renderJokeCard(jokesCardArray);   
+        });
 }
 
 // function to create joke card
@@ -85,7 +87,7 @@ function createJokeCard (jokesArray) {
 
     let jokesCardArray = [];
 
-    for (i =0; i < jokesArray.length; i++) {
+    for (i = 0; i < jokesArray.length; i++) {
 
         console.log("create Joke Card");
         
@@ -94,7 +96,7 @@ function createJokeCard (jokesArray) {
         
         const jokeContent = $('<div>') 
             .addClass('card-body')
-            .text(jokesArray.i);
+            .text(jokesArray[i]);
 
         jokeCard.append(jokeContent);
 
@@ -108,10 +110,9 @@ function createJokeCard (jokesArray) {
 function renderJokeCard (jokesCardArray) {
     const jokesCardContainer = $('#jokesModalBody');
 
-    for (i = 0; i < jokesCardArray.length; index++) {
-        jokesCardContainer.append(jokeCard);
+    for (i = 0; i < jokesCardArray.length; i++) {
+        jokesCardContainer.append(jokesCardArray[i]);
     }
-
 }
 
 function getJokes () {
@@ -123,28 +124,35 @@ function getJokes () {
 
     console.log("get jokes");
 
+    const fetchPromises = [];
+
     for (i = 0; i < maxJokes; i++) {
 
-        fetch(requestJokesUrl, {
-            headers: {
-                'Accept': 'application/json'
-            }
-        })
-        .then(function(response){
-            return response.json();
-        })
-        .then(function(data) {
+        fetchPromises.push(
+            fetch(requestJokesUrl, {
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(data) {
 
-            const joke = data.joke;
-            
-            jokesArray.push(joke);    
+                const joke = data.joke;
+                
+                jokesArray.push(joke);    
 
-            //console.log("jokes 1", jokesArray);
-        })
+                //console.log("jokes 1", jokesArray);
+            })
+        )
     }
-
-    console.log ("jokesArray", jokesArray)
-    return jokesArray;
+    return Promise.all(fetchPromises)
+        .then(() => {
+            console.log ("jokesArray", jokesArray)
+            return jokesArray;
+        });
+    
 }
 
 // USER INTERACTIONS
