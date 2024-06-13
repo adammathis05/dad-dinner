@@ -26,7 +26,7 @@ function getRandommeal() {
         // Ingridient = $('<li>')
         Instructions = $('<p>')
         RecipeURL = $('<a>')
-        
+                
         RecipeName.textContent = data[i].strMeal
         RecipeCategory.textContent= data[i].strCategory
         RecipeImg.setAttribute('src', data[i].strMealThumb)
@@ -48,6 +48,7 @@ function getRandommeal() {
     }
 
     })
+
 }
 function redirectHome() {
     const homeurl = './index.html';
@@ -55,9 +56,20 @@ function redirectHome() {
 }
 
 header.getElementById("homeButton").addEventListener("click", redirectHome);
+=======
+};
 
 
 getRandommeal();
 
 
 Randombutton.on('click', getRandommeal)
+
+// function to launch the jokes modal
+function launchJokesModal (event){
+    event.preventDefault();
+    console.log("launch jokes modal");
+}
+
+// event listener for modal launch button
+$('#jokesButton').on('click', launchJokesModal);
