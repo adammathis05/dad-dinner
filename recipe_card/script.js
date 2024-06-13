@@ -11,16 +11,26 @@ document.addEventListener('DOMContentLoaded', () => {
             fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient}`)
                 .then(response => response.json())
                 .then(data => {
-                    const newMeals = data.meals.filter(meal => !displayedRecipes.has(meal.idMeal));
-                    const mealPromises = newMeals.slice(0, 5).map(meal => {
-                        return fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`)
-                            .then(response => response.json())
-                            .then(mealData => mealData.meals[0]);
-                    });
-                    Promise.all(mealPromises).then(meals => {
-                        meals.forEach(meal => displayedRecipes.add(meal.idMeal)); // Add new recipes to the set
-                        displayRecipes(meals);
-                    });
+                    if (data.meals) {
+                        // Filter out previously displayed recipes
+                        const newMeals = data.meals.filter(meal => !displayedRecipes.has(meal.idMeal));
+                        // If no new meals are found, clear the set and retry
+                        if (newMeals.length === 0) {
+                            displayedRecipes.clear();
+                            newMeals.push(...data.meals.slice(0, 5));
+                        }
+                        const mealPromises = newMeals.slice(0, 5).map(meal => {
+                            return fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`)
+                                .then(response => response.json())
+                                .then(mealData => mealData.meals[0]);
+                        });
+                        Promise.all(mealPromises).then(meals => {
+                            meals.forEach(meal => displayedRecipes.add(meal.idMeal)); // Add new recipes to the set
+                            displayRecipes(meals);
+                        });
+                    } else {
+                        recipeContainer.innerHTML = '<p>No recipes found. Try a different ingredient.</p>';
+                    }
                 })
                 .catch(error => console.error('Error fetching recipes:', error));
         } else {
@@ -43,12 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function displayRecipes(meals) {
-        if (meals.length === 0) {
-            recipeContainer.innerHTML = '<p>No new recipes found. Try a different ingredient.</p>';
-            return;
-        }
         recipeContainer.innerHTML = ''; // Clear existing recipes
-        if (meals) {
+        if (meals && meals.length > 0) {
             meals.forEach(meal => {
                 const ingredients = getIngredientsList(meal);
                 const recipeCard = document.createElement('div');
