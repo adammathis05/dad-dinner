@@ -150,8 +150,10 @@ color: #d58936;
   color: white;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), -5px 5px 9px rgba(0, 0, 0, 0.24);
   border-radius: 5%;
-}
+  /* transition: all 0.5s ease-in-out; */
 
+  }
+  
 
 .form-group {
   display: flex;
@@ -160,13 +162,22 @@ color: #d58936;
   
 }
 
+.form-control:hover, .form-control:hover {
+  box-shadow: inset 0px 0px 8px rgb(247, 245, 247), 0 0 10px rgb(255, 179, 0);
+
+
+}
+
+
+
 .btn.btn-primary {
   display: flex;
   margin-bottom: 25px;
 }
 
-.btn.btn-warning {
+.btn.btn-warning:hover, .btn.btn-warning:hover {
   display: flex;
+  box-shadow: inset 0px 0px 8px rgb(247, 245, 247), 0 0 10px #3C1518;
 
 }
 
