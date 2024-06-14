@@ -95,9 +95,14 @@ mark.pageTitle {
 }
 
 .subHeader {
-  font-family: "Give You Glory", cursive, bolder;
+  /*font-family: "Give You Glory", cursive, bolder;
 padding-bottom: 15px;
-
+*/
+font-family: "Caveat", cursive;
+color: #1d080a;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 
