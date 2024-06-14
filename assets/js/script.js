@@ -19,7 +19,7 @@
     function redirectPageRandom(event){
         event.preventDefault();
         console.log("Did I work?")
-        localStorage.setItem('random',mode)
+        localStorage.setItem('mode', 'random')
      // window.location.replace(RecipeURL)
         $(location).attr('href', RecipeURL)
         // document.location.replace(RecipeURL);
@@ -28,7 +28,7 @@
     function redirectPageIngridient(event) {
         event.preventDefault();
         console.log(ingredientInput.val())
-        localStorage.setItem('input', mode)
+        localStorage.setItem('mode', 'ingredient')
         localStorage.setItem('ingredientInput', ingredientInput.val())
 
         $(location).attr('href', RecipeURL)
