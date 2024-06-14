@@ -28,10 +28,14 @@ function getRandommeal() {
         // RecipeURL = $('<a>')
         
         RecipeName.text(data.meals[i].strMeal)
+        RecipeName.attr('style', 'border: 3px solid #3C1518')
+        RecipeName.attr('style','box-shadow: 0 1px 6px #3C1518, -5px 5px 9px rgba(0, 0, 0, 0.24);')
+        // RecipeName.attr('style', 'padding: 3px;')
         RecipeCategory.text(data.meals[i].strCategory)
         RecipeImg.attr('src', data.meals[i].strMealThumb)
         RecipeImg.attr('style','width:350px')
         Instructions.text(data.meals[i].strInstructions)
+        Instructions.attr('style', 'text-align:center; font-size:15px;')
     //     if (!data[i].strSource) {
     //         RecipeURL = '' 
     // } else {
@@ -89,19 +93,6 @@ function getRandommeal() {
         }
     }
    
-    // randomButton.addEventListener('click', () => {
-    //     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             if (!displayedRecipes.has(data.meals[0].idMeal)) {
-    //                 displayedRecipes.add(data.meals[0].idMeal);
-    //                 displayRecipes([data.meals[0]]);
-    //             } else {
-    //                 randomButton.click(); // Fetch a new random recipe if already displayed
-    //             }
-    //         })
-    //         .catch(error => console.error('Error fetching random recipe:', error));
-    // });
 
 
     function displayRecipes(meals) {
