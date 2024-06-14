@@ -14,7 +14,12 @@
   font-style: normal;
 }
 
-
+.bg {
+  background-image: url("/assets/images/background-light.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 .topBar {
   display: flex;
@@ -91,7 +96,7 @@ mark.pageTitle {
 }
 
 .subHeader {
-  font-family: "Give You Glory", cursive;
+  font-family: "Give You Glory", cursive, bolder;
 padding-bottom: 15px;
 
 }
@@ -121,11 +126,26 @@ padding-bottom: 15px;
   /* width: 600px; */
   align-items: center;
   margin-bottom: 25px;
-  font-family: "Give You Glory", cursive;
+  /* font-family: "Give You Glory", cursive; */
 
 
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn.btn-primary {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.btn.btn-warning {
+  display: flex;
+
+}
 
 body {
   margin: 0;
