@@ -15,10 +15,10 @@
 }
 
 .bg {
-  background-image: url("/Users/adammathis/bootcamp/Class Repos/dad-dinner/assets/images/background-grey.jpg");
+  background-image: url("./assets/images/background-light.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 
 .topBar {
@@ -96,7 +96,7 @@ mark.pageTitle {
 }
 
 .subHeader {
-  font-family: "Give You Glory", cursive;
+  font-family: "Give You Glory", cursive, bolder;
 padding-bottom: 15px;
 
 }
