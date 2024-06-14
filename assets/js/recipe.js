@@ -25,24 +25,26 @@ function getRandommeal() {
         // RecipeIngridients = $('<ul>')
         // Ingridient = $('<li>')
         Instructions = $('<p>')
-        RecipeURL = $('<a>')
+        // RecipeURL = $('<a>')
         
-        RecipeName.textContent = data[i].strMeal
-        RecipeCategory.textContent= data[i].strCategory
-        RecipeImg.setAttribute('src', data[i].strMealThumb)
-        Instructions.textContent= data[i].strInstructions
-        if (!data[i].strSource) {
-            RecipeURL = '' 
-    } else {
-        RecipeUrl.setAttribute('href', data[i].strSource)
+        RecipeName.text(data.meals[i].strMeal)
+        RecipeCategory.text(data.meals[i].strCategory)
+        RecipeImg.attr('src', data.meals[i].strMealThumb)
+        RecipeImg.attr('style','width:350px')
+        Instructions.text(data.meals[i].strInstructions)
+    //     if (!data[i].strSource) {
+    //         RecipeURL = '' 
+    // } else {
+    //     RecipeUrl.setAttribute('href', data[i].strSource)
     
-    }
-    RecipeCard.appendChild(RecipeName);
-    RecipeName.appendChild(RecipeCategory);
-    RecipeCategory.appendChild(RecipeImg);
-    RecipeImg.appendChild(Instructions);
-    Instructions.appendChild(RecipeURL);
-    Recipecontainer.appendChild(RecipeCard);
+    // }
+    RecipeCard.append(RecipeName);
+    RecipeName.append(RecipeCategory);
+    RecipeCategory.append(Instructions);
+    RecipeCategory.append(RecipeImg);
+    // RecipeImg.append(Instructions);
+    // Instructions.appendChild(RecipeURL);
+    Recipecontainer.append(RecipeCard);
 
 
     }
