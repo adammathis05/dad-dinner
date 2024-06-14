@@ -18,43 +18,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
-<body class = "bg">
+<body>
     <header class = "topBar">
         <div class="headerImg "><img class ="m-0" src=assets\images\logo.png alt="dad's dinner logo">
         </div>
     </header>  
-
-    <div class = "titleText">
-        <h1 class = "headerText">
-            Welcome to Dad’s Dinner!
-        </h1>
-        <h4 class = "subHeader">
-            Take a little stress out of your day &#128513
-        </h4>
-        <div class="centralTextBox">
-            <h6 class="card-body">
-                Enter an ingredient that's already in your fridge and we'll drop 
-                a few recipe options – along with some dad jokes to keep the kiddos happy while you cook!
-            </h6>
-          </div>
-      
-    </div>
     
-
-
-    
-    <div class = "formInput">
-        <form id="ingredientForm" class = mainSearch>
-            <div class="form-group">
-                <label class = "labeltext" for="ingredient-input">What's in Your Fridge?</label>
-                <input id="ingredient-input" type="text" class="form-control" placeholder="Main Ingredient">
+    <main class="bg">
+        <div class = "titleText">
+            <h1 class = "headerText">
+                Welcome to Dad’s Dinner!
+            </h1>
+            <h4 class = "subHeader">
+                Take a little stress out of your day &#128513
+            </h4>
+            <div class="centralTextBox">
+                <h6 class="card-body">
+                    Enter an ingredient that's already in your fridge and we'll drop 
+                    a few recipe options – along with some dad jokes to keep the kiddos happy while you cook!
+                </h6>
             </div>
-            <button id="search" type="submit" class="btn btn-primary">Search</button>
-           
-        </form>
-        <button id="randomize" type="submit" class="btn btn-warning">Randomize Me!</button>
-    </div>
+            
+        </div>
 
+        <div class = "formInput">
+            <form id="ingredientForm" class = mainSearch>
+                <div class="form-group">
+                    <label class = "labeltext" for="ingredient-input">What's in Your Fridge?</label>
+                    <input id="ingredient-input" type="text" class="form-control" placeholder="Main Ingredient">
+                </div>
+                <button id="search" type="submit" class="btn btn-primary">Search</button>
+                
+            </form>
+            <button id="randomize" type="submit" class="btn btn-warning">Randomize Me!</button>
+        </div>
+        
+    </main>
     <footer><h4>Created by team Awesome</h4></footer>
 
 
