@@ -1,5 +1,5 @@
-// const Recipecontainer= $('#recipes')
-if(localStorage.getItem(mode)=== 'random') {
+const Recipecontainer= $('#recipes-container')
+if(localStorage.getItem('mode')=== 'random') {
 getRandommeal();
 }
 else {
@@ -17,7 +17,7 @@ function getRandommeal() {
         console.log(data.meals);
         
     
-    for(let i =0; i<data.length;i++){
+    for(let i =0; i<data.meals.length;i++){
         RecipeCard = $('<div>')
         RecipeName = $('<h2>')
         RecipeCategory = $('<h3>')
@@ -51,7 +51,7 @@ function getRandommeal() {
 }
 
 
-// getRandommeal(); 
+
 
 
 
@@ -141,15 +141,15 @@ function getRandommeal() {
         return ingredients;
     }
 
-ingredientFunc();
-// displayRecipes();
+
+
 const homepageURL = "/index.html"
-const homeButton = document.getElementById('homebutton')
+const homeButton = $('#goBack')
 
 function redirectHome() {
   const homeurl = './index.html';
    window.location.replace(homeurl)}
 
-//homebutton.addEventListener('click', redirectHome)
+homeButton.on('click', redirectHome)
 
 
