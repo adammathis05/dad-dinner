@@ -114,9 +114,6 @@ padding-bottom: 15px;
 }
 
 
-
-
-
 .formInput {
   display: flex;
   /* margin-left: 250px; */
@@ -128,13 +125,25 @@ padding-bottom: 15px;
   margin-bottom: 25px;
   /* font-family: "Give You Glory", cursive; */
 
-
 }
+
+.mainSearch {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-color: #1d080a;
+  background-color: #3C1518;
+  color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), -5px 5px 9px rgba(0, 0, 0, 0.24);
+  border-radius: 5%;
+}
+
 
 .form-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 
 .btn.btn-primary {
