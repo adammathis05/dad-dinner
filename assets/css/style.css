@@ -45,8 +45,10 @@ img {
   width: 200px;
   margin-top: 90px;
   height: 200px;
+
   position: relative;
   top: 20px;
+
   display: flex;
   /* min-height: 10px; */
   padding: 0px;
@@ -142,7 +144,7 @@ color: #d58936;
 }
 
 .mainSearch {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   margin-bottom: 20px;
   padding: 15px;
   border-color: #1d080a;
