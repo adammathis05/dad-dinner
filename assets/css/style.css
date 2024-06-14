@@ -99,10 +99,12 @@ mark.pageTitle {
 padding-bottom: 15px;
 */
 font-family: "Caveat", cursive;
-color: #1d080a;
+color: #d58936;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-size: 35px;
+  text-shadow:1px 1px #3C1518;;
 }
 
 
