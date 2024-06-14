@@ -9,7 +9,57 @@
      <!-- page styles  -->
     <link rel="stylesheet" href="./assets/css/results.css" />
     <title>Results Page</title>
+    <style>
+        /* Style for button */
+        .button {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
 
+        /* Style for header */
+        .header {
+            min-height: 50px;
+            padding: 20px;
+            text-align: right;
+            color: white;
+            font-size: 30px;
+            background: #3C1518;
+        }
+
+        /* Additional styles for recipe card */
+        .recipe-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .recipe-card img {
+            width: 350px; /* Fixed width for the image */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure the image covers the area */
+        }
+
+        .recipe-card .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .recipe-card .card-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .recipe-card .card-subtitle {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .recipe-card .card-text {
+            font-size: 16px;
+        }
+    </style>
 </head>
 <header>
     <button id="goBack">&#8678; Return Home</button>
