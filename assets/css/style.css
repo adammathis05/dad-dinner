@@ -15,7 +15,7 @@
 }
 
 .bg {
-  background-image: url("./assets/images/background-light.jpg");
+  background-image: url("/assets/images/background-light.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
