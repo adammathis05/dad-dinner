@@ -14,7 +14,7 @@
     const ingredientInput =$('#ingredient-input')
     const searchButton = $('#search')
     
-    const RecipeURL= './recipe.html'
+    const RecipeURL= './results.html'
     let mode ='' 
     function redirectPageRandom(event){
         event.preventDefault();
