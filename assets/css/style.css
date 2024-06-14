@@ -45,7 +45,7 @@ img {
   width: 200px;
   margin-top: 90px;
   height: 200px;
-  /* position: sticky; */
+  position: sticky;
   display: flex;
   /* min-height: 10px; */
   padding: 0px;
