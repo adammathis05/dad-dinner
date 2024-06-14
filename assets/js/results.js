@@ -119,6 +119,14 @@ function getJokes () {
     
 }
 
+// function to clear jokesCardContainer
+function clearJokesCardContainer () {
+    console.log("cleared");
+
+    const jokesCardContainer = $('#jokesModalBody');
+    jokesCardContainer.empty();
+}
+
 // USER INTERACTIONS
 
 
@@ -127,3 +135,6 @@ function getJokes () {
 
 // event listener for modal launch button
 $('#jokesButton').on('click', launchJokesModal);
+
+// event listener for modal close button
+$('#jokesClose').on('click', clearJokesCardContainer);
