@@ -93,19 +93,6 @@ function getRandommeal() {
         }
     }
    
-    // randomButton.addEventListener('click', () => {
-    //     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             if (!displayedRecipes.has(data.meals[0].idMeal)) {
-    //                 displayedRecipes.add(data.meals[0].idMeal);
-    //                 displayRecipes([data.meals[0]]);
-    //             } else {
-    //                 randomButton.click(); // Fetch a new random recipe if already displayed
-    //             }
-    //         })
-    //         .catch(error => console.error('Error fetching random recipe:', error));
-    // });
 
 
     function displayRecipes(meals) {
