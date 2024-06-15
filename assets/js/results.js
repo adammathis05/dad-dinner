@@ -129,10 +129,6 @@ function clearJokesCardContainer () {
 
 // USER INTERACTIONS
 
-
-
-
-
 // event listener for modal launch button
 $('#jokesButton').on('click', launchJokesModal);
 
@@ -140,32 +136,33 @@ $('#jokesButton').on('click', launchJokesModal);
 $('#jokesClose').on('click', clearJokesCardContainer);
 
 // Event listener for click outside the modal
-document.addEventListener('click', function(event) {
-    if (!event.target.closest('.modal')) {
+$(document).on('click', function(event) {
+    if (!$(event.target).closest('.modal').length && isModalOpen()) {
         clearJokesCardContainer();
-        console.log("cleared on click")
+        console.log("cleared on click");
     }
 });
 
 // Event listener for Escape key press
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
+$(document).on('keydown', function(event) {
+    if (event.key === 'Escape' && isModalOpen()) {
         clearJokesCardContainer();
-        console.log("cleared on esc")
+        console.log("cleared on esc");
     }
 });
 
 // Function to check if the modal is open
 function isModalOpen() {
     const modal = document.getElementById('jokesModal');
-    console.log("modal open or close")
+    console.log("modal open or close");
+    console.log(modal.classList.contains('show'));
 
     return modal.classList.contains('show');
 }
 
-// Example usage
-if (isModalOpen()) {
-    console.log('Modal is open');
-} else {
-    console.log('Modal is closed');
-}
+// // Example usage
+// if (isModalOpen()) {
+//     console.log('Modal is open');
+// } else {
+//     console.log('Modal is closed');
+// }
