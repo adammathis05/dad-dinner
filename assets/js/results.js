@@ -32,18 +32,24 @@
 
 
 // INITIALIZATION
+let isModalVisible = false;
 
 // function to launch the jokes modal
 function launchJokesModal (event){
 
     event.preventDefault();
-    console.log("launch jokes modal");
+
+    clearJokesCardContainer();
+
+    console.log("launch jokes modal");    
 
     getJokes()
         .then(jokesArray => {
             const jokesCardArray = createJokeCard(jokesArray);
             renderJokeCard(jokesCardArray);   
         });
+
+
 }
 
 // function to create joke card
@@ -129,12 +135,6 @@ function clearJokesCardContainer () {
 
 // USER INTERACTIONS
 
-
-
-
-
 // event listener for modal launch button
 $('#jokesButton').on('click', launchJokesModal);
 
-// event listener for modal close button
-$('#jokesClose').on('click', clearJokesCardContainer);
