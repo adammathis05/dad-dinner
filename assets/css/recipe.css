@@ -22,6 +22,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
   border-radius: 8px;
+  overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
+  max-width: 400px; /* Max width for responsiveness */
+  background-color: white; /* Background color */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  margin: 20px; /* Space around the card */
 }
 
 .recipe-card img {
