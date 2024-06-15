@@ -29,6 +29,9 @@
   margin: 20px; /* Space around the card */
 }
 
+.recipe-card:hover {
+  box-shadow: 8px 0 16px rgba(0, 0, 0, 0.2), -8px 0 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
 .recipe-card img {
   width: 350px; /* Fixed width for the image */
   height: auto; /* Maintain aspect ratio */
@@ -36,6 +39,7 @@
 }
 
 .recipe-card .card-body {
+  padding: 20px; /* Added padding for spacing */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,11 +48,15 @@
 .recipe-card .card-title {
   font-size: 24px;
   margin-bottom: 10px;
+  font-weight: bold; /* Bold title */
+  color: #3C1518; /* Match header color */
+
 }
 
 .recipe-card .card-subtitle {
   font-size: 18px;
   margin-bottom: 15px;
+  color: #6b6b6b; /* Subtle subtitle color */
 }
 
 .recipe-card .card-text {
