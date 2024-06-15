@@ -32,15 +32,16 @@
 
 
 // INITIALIZATION
+let isModalVisible = false;
 
 // function to launch the jokes modal
 function launchJokesModal (event){
 
     event.preventDefault();
+
+    clearJokesCardContainer;
+
     console.log("launch jokes modal");    
-    
-    toggleModal(); // Toggle modal state
-    console.log(isModalOpen());
 
     getJokes()
         .then(jokesArray => {
@@ -140,32 +141,33 @@ $('#jokesButton').on('click', launchJokesModal);
 // event listener for modal close button
 $('#jokesClose').on('click', clearJokesCardContainer);
 
-// Event listener for click outside the modal
-$(document).on('click', function(event) {
-    if (!$(event.target).closest('.modal').length && isModalOpen()) {
-        clearJokesCardContainer();
-        console.log("cleared on click");
-    }
-});
 
-// Event listener for Escape key press
-$(document).on('keydown', function(event) {
-    if ( isModalOpen() && event.key === 'Escape' ) {
-        clearJokesCardContainer();
-        console.log("cleared on esc");
-    }
-});
+
+// // Event listener for click outside the modal
+// $(document).on('click', function(event) {
+//     if (!$(event.target).closest('.modal').length && isModalOpen()) {
+//         clearJokesCardContainer();
+//         console.log("cleared on click");
+//     }
+// });
+
+// // Event listener for Escape key press
+// $(document).on('keydown', function(event) {
+//     if ( isModalOpen() && event.key === 'Escape' ) {
+//         clearJokesCardContainer();
+//         console.log("cleared on esc");
+//     }
+// });
 
 // Function to check if the modal is open
-function isModalOpen() {
-    const modal = document.getElementById('jokesModal');
-    console.log("modal open or close");
-    console.log(modal.classList.contains('show'));
+// function isModalOpen() {
+//     const modal = document.getElementById('jokesModal');
+//     console.log("modal open or close");
+//     console.log(modal.classList.contains('show'));
 
-    return modal.classList.contains('show');
-}
+//     return modal.classList.contains('show');
+// }
 
-let isModalVisible = false;
 
 // Function to check if modal is open
 function isModalOpen() {
