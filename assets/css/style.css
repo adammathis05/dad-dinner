@@ -58,6 +58,7 @@ img {
   justify-content: center;
   border: solid 5px #3C1518;
   border-radius: 50%;
+  filter:drop-shadow(2px 4px 6px black)
 }
 
 mark.pageTitle {
