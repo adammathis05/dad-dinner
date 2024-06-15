@@ -37,13 +37,18 @@
 function launchJokesModal (event){
 
     event.preventDefault();
-    console.log("launch jokes modal");
+    console.log("launch jokes modal");    
+    
+    toggleModal(); // Toggle modal state
+    console.log(isModalOpen());
 
     getJokes()
         .then(jokesArray => {
             const jokesCardArray = createJokeCard(jokesArray);
             renderJokeCard(jokesCardArray);   
         });
+
+
 }
 
 // function to create joke card
@@ -145,7 +150,7 @@ $(document).on('click', function(event) {
 
 // Event listener for Escape key press
 $(document).on('keydown', function(event) {
-    if (event.key === 'Escape' && isModalOpen()) {
+    if ( isModalOpen() && event.key === 'Escape' ) {
         clearJokesCardContainer();
         console.log("cleared on esc");
     }
@@ -160,6 +165,17 @@ function isModalOpen() {
     return modal.classList.contains('show');
 }
 
+let isModalVisible = false;
+
+// Function to check if modal is open
+function isModalOpen() {
+    return isModalVisible;
+}
+
+// Function to toggle modal state
+function toggleModal() {
+    isModalVisible = !isModalVisible;
+}
 // // Example usage
 // if (isModalOpen()) {
 //     console.log('Modal is open');
