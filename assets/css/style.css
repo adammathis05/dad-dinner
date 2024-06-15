@@ -15,7 +15,7 @@
 }
 
 .bg {
-  background-image: url('/assets/images/background-light.jpg');
+  background-image: url("/assets/images/background-light.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -45,10 +45,7 @@ img {
   width: 200px;
   margin-top: 90px;
   height: 200px;
-
-  position: relative;
-  top: 20px;
-
+  /* position: sticky; */
   display: flex;
   /* min-height: 10px; */
   padding: 0px;
@@ -58,7 +55,11 @@ img {
   justify-content: center;
   border: solid 5px #3C1518;
   border-radius: 50%;
+
+
+
   filter:drop-shadow(2px 4px 6px black)
+
 }
 
 mark.pageTitle {
@@ -150,7 +151,7 @@ color: #d58936;
 }
 
 .mainSearch {
-  /* margin-top: 100px; */
+  margin-top: 100px;
   margin-bottom: 20px;
   padding: 15px;
   border-color: #1d080a;
@@ -190,7 +191,7 @@ color: #d58936;
 
 .btn.btn-warning:hover, .btn.btn-warning:hover {
   display: flex;
-  box-shadow: inset 0px 0px 8px rgb(247, 245, 247), 0 0 10px #3C1518;
+  box-shadow: inset 0px 0px 8px rgb(247, 245, 247), 0 0 10px rgb(255, 179, 0);
 
 }
 
@@ -202,7 +203,7 @@ body {
 }
 
 footer {
-  position: relative;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
