@@ -143,27 +143,29 @@ $('#jokesClose').on('click', clearJokesCardContainer);
 document.addEventListener('click', function(event) {
     if (!event.target.closest('.modal')) {
         clearJokesCardContainer();
+        console.log("cleared on click")
     }
 });
 
 // Event listener for Escape key press
 document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape' & isModalOpen ) {
-        clearJokesCardContainer();;
+    if (event.key === 'Escape') {
+        clearJokesCardContainer();
+        console.log("cleared on esc")
     }
 });
 
 // Function to check if the modal is open
 function isModalOpen() {
     const modal = document.getElementById('jokesModal');
+    console.log("modal open or close")
+
     return modal.classList.contains('show');
 }
 
 // Example usage
 if (isModalOpen()) {
-    // Modal is open
     console.log('Modal is open');
 } else {
-    // Modal is closed
     console.log('Modal is closed');
 }
