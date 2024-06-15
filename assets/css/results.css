@@ -1,3 +1,89 @@
 #jokes-container {
     background-image: url('/assets/images/Chef-server.png');
   }
+
+  .button {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for header */
+.header {
+    min-height: 50px;
+    padding: 20px;
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    background: #3C1518;
+}
+
+
+
+.topBarResults {
+    display: flex;
+    height: 100px;
+    width: auto;
+    /* background: #1d080a; */
+    background-image: linear-gradient(#3C1518 19%, #1d080a 75%);
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.headerImgResults {
+  width: 200px;
+  margin-top: 90px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+
+  display: flex;
+  /* min-height: 10px; */
+  padding: 0px;
+  text-align: center;
+  /* color: white; */
+  /* font-size: 10px; */
+  justify-content: center;
+  border: solid 5px #3C1518;
+  border-radius: 50%;
+}
+
+
+/* Additional styles for recipe card */
+.recipe-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.recipe-card img {
+    width: 350px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.recipe-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipe-card .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.recipe-card .card-subtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.recipe-card .card-text {
+    font-size: 16px;
+}
+
+
