@@ -28,9 +28,9 @@
     background-image: linear-gradient(#3C1518 19%, #1d080a 75%);
     flex-direction: row;
     align-content: center;
-    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 .headerImgResults {
@@ -78,7 +78,7 @@ display: flex;
     border-radius: 8px;
     display: flex;
     font-size: xx-small;
-    margin-bottom: 20px;
+    margin-bottom: -40px;
     margin-top: 50px;
 }
 
@@ -108,4 +108,9 @@ display: flex;
     font-size: 16px;
 }
 
+.jokesCol {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
 
