@@ -3,6 +3,8 @@
   border: none;
   margin: 0;
   padding: 0;
+  cursor: pointer; /* Added for interactivity */
+  background-color: transparent; /* Ensures no background */
 }
 
 /* Style for header */
