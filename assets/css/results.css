@@ -1,13 +1,37 @@
 #jokes-container {
-    background-image: url('/assets/images/Chef-server.png');
+    /* background-image: url('/assets/images/Chef-server.png'); */
+    background: whitesmoke;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+    border-radius: 8px;
+    display: flex;
+    font-size: xx-small;
+    margin-bottom: -40px;
+    padding: 20px;
+    margin-left: 10px;
   }
 
-  .button {
+.button {
     border: none;
     margin: 0;
     padding: 0;
 }
 
+#goBack{
+    background: #d58936;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+#jokesButton{
+    background: #d58936;
+    border: #d58936 ;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
 /* Style for header */
 /* .header {
     min-height: 50px;
@@ -31,12 +55,13 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .headerImgResults {
-  width: 200px;
-  margin-top: 90px;
-  height: 200px;
+  width: 150px;
+  margin-top: 45px;
+  height: 150px;
   border-radius: 50%;
   position: relative;
   top: 20px;
@@ -50,6 +75,8 @@
   justify-content: center;
   border: solid 5px #3C1518;
   border-radius: 50%;
+  filter:drop-shadow(2px 4px 6px black);
+
 }
 
 .col {
@@ -65,6 +92,7 @@ display: flex;
 
 .titleRight {
 display: flex;
+justify-content: center;
 
 }
 
@@ -106,6 +134,19 @@ display: flex;
 
 .recipe-card .card-text {
     font-size: 16px;
+}
+
+#recipes-container{
+    background: whitesmoke;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+    border-radius: 8px;
+    display: flex;
+    font-size: xx-small;
+    margin-bottom: -40px;
+    padding: 20px;
+    margin-right: 5px;
 }
 
 .jokesCol {

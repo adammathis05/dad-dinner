@@ -43,7 +43,7 @@ img {
 
 .headerImg {
   width: 200px;
-  margin-top: 110px;
+  margin-top: 90px;
   height: 200px;
   /* position: sticky; */
   display: flex;
@@ -56,7 +56,10 @@ img {
   border: solid 5px #3C1518;
   border-radius: 50%;
 
+
+
   filter:drop-shadow(2px 4px 6px black)
+
 }
 
 mark.pageTitle {
@@ -148,7 +151,7 @@ color: #d58936;
 }
 
 .mainSearch {
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 20px;
   padding: 15px;
   border-color: #1d080a;
@@ -184,8 +187,6 @@ color: #d58936;
   margin-bottom: 5px;
   margin-top: 5px;
   justify-content: center;
-  background: #a44200;
-  border: #a44200;
 }
 
 .btn.btn-warning:hover, .btn.btn-warning:hover {
@@ -202,7 +203,6 @@ body {
 }
 
 footer {
-  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
