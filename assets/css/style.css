@@ -151,7 +151,7 @@ color: #d58936;
 }
 
 .mainSearch {
-  margin-top: 100px;
+  margin-top: 20px;
   margin-bottom: 20px;
   padding: 15px;
   border-color: #1d080a;
@@ -203,7 +203,6 @@ body {
 }
 
 footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;

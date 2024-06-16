@@ -1,5 +1,15 @@
 #jokes-container {
     /* background-image: url('/assets/images/Chef-server.png'); */
+    background: whitesmoke;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+    border-radius: 8px;
+    display: flex;
+    font-size: xx-small;
+    margin-bottom: -40px;
+    padding: 20px;
+    margin-left: 10px;
   }
 
 .button {
@@ -15,6 +25,13 @@
     text-align: center;
 }
 
+#jokesButton{
+    background: #d58936;
+    border: #d58936 ;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
 /* Style for header */
 /* .header {
     min-height: 50px;
@@ -75,6 +92,7 @@ display: flex;
 
 .titleRight {
 display: flex;
+justify-content: center;
 
 }
 
@@ -128,6 +146,7 @@ display: flex;
     font-size: xx-small;
     margin-bottom: -40px;
     padding: 20px;
+    margin-right: 5px;
 }
 
 .jokesCol {
