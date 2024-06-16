@@ -8,6 +8,13 @@
     padding: 0;
 }
 
+#goBack{
+    background: #d58936;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
 /* Style for header */
 /* .header {
     min-height: 50px;
@@ -31,6 +38,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .headerImgResults {
