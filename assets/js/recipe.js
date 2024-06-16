@@ -110,7 +110,7 @@ function getRandommeal() {
                     <a href="https://www.themealdb.com/meal.php?c=${meal.idMeal}" target="_blank">
                         <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
                     </a>
-                    <div class="recipe-content">
+                    <div id="recipe-cont" class="recipe-content">
                         <h2>${meal.strMeal}</h2>
                         <p id="ingredients">${ingredients}</p>
                     </div>

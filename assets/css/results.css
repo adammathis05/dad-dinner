@@ -119,6 +119,11 @@ justify-content: center;
     margin: 10px;
 }
 
+#recipe-cont {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
 .recipe-card .card-body {
     display: flex;
     flex-direction: column;
