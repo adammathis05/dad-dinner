@@ -149,6 +149,10 @@ justify-content: center;
     margin-right: 5px;
 }
 
+#ingredients{
+    column-count: 2;
+}
+
 .jokesCol {
     display: flex;
     flex-direction: column;

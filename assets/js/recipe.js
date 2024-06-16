@@ -112,7 +112,7 @@ function getRandommeal() {
                     </a>
                     <div class="recipe-content">
                         <h2>${meal.strMeal}</h2>
-                        <p>${ingredients}</p>
+                        <p id="ingredients">${ingredients}</p>
                     </div>
                 `;
                 recipeContainer.appendChild(recipeCard);
