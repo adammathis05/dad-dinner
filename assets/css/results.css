@@ -108,6 +108,8 @@ justify-content: center;
     font-size: xx-small;
     margin-bottom: -40px;
     margin-top: 50px;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .recipe-card img {
