@@ -1,5 +1,5 @@
 #jokes-container {
-    background-image: url('/assets/images/Chef-server.png');
+    /* background-image: url('/assets/images/Chef-server.png'); */
   }
 
   .button {
@@ -34,9 +34,9 @@
 }
 
 .headerImgResults {
-  width: 200px;
-  margin-top: 90px;
-  height: 200px;
+  width: 150px;
+  margin-top: 45px;
+  height: 150px;
   border-radius: 50%;
   position: relative;
   top: 20px;
@@ -106,6 +106,18 @@ display: flex;
 
 .recipe-card .card-text {
     font-size: 16px;
+}
+
+#recipes-container{
+    background: whitesmoke;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+    border-radius: 8px;
+    display: flex;
+    font-size: xx-small;
+    margin-bottom: -40px;
+    padding: 20px;
 }
 
 .jokesCol {
