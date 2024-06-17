@@ -108,12 +108,20 @@ justify-content: center;
     font-size: xx-small;
     margin-bottom: -40px;
     margin-top: 50px;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .recipe-card img {
-    width: 350px; /* Fixed width for the image */
+    width: 200px; /* Fixed width for the image */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure the image covers the area */
+    margin: 10px;
+}
+
+#recipe-cont {
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .recipe-card .card-body {
@@ -147,6 +155,10 @@ justify-content: center;
     margin-bottom: -40px;
     padding: 20px;
     margin-right: 5px;
+}
+
+#ingredients{
+    column-count: 2;
 }
 
 .jokesCol {
