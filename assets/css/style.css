@@ -19,6 +19,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  min-height: calc(100vh - 75px);
 }
 
 .topBar {
@@ -207,7 +208,7 @@ footer {
   bottom: 0;
   width: 100%;
 
-
+  position: fixed;
   min-height: 75px;
   align-content: center;
   bottom: 0;
