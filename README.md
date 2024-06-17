@@ -11,7 +11,7 @@ Just type an ingredient in the search bar and be taken to a list of recipes feat
 Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-(since I cant see anyhting image wise, someone else is going to have to add the screenshots)
+
 ![Image of Deployed Homepage]((https://github.com/adammathis05/dad-dinner/blob/main/assets/images/Deployed%20App%20Homepage.png))
 
 ## Credits
