@@ -26,7 +26,6 @@
   display: flex;
   height: 100px;
   width: auto;
-  /* background: #1d080a; */
   background-image: linear-gradient(#3C1518 19%, #1d080a 75%);
   flex-direction: row;
   align-content: center;
@@ -37,53 +36,36 @@
 img {
   border-radius: 50%;
   margin-top: 5px;
-  /* max-height: 100%;
-    /* object-fit: cover;
-    object-position: 50% 50%; */
 }
 
 .headerImg {
   width: 200px;
   margin-top: 90px;
   height: 200px;
-  /* position: sticky; */
   display: flex;
-  /* min-height: 10px; */
   padding: 0px;
   text-align: center;
-  /* color: white; */
-  /* font-size: 10px; */
   justify-content: center;
   border: solid 5px #3C1518;
   border-radius: 50%;
-
-
-
-  filter:drop-shadow(2px 4px 6px black)
-
+  filter: drop-shadow(2px 4px 6px black)
 }
 
 mark.pageTitle {
   font-weight: bold;
   background-color: transparent;
-
 }
-
 
 .titleText {
   display: flex;
-    flex-wrap: wrap;
-    margin-top: 75px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 40px;
-    /* border: solid 5px #3C1518; */
-    /* border-radius: 25%; */
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-  /* border: solid 5px #3C1518; */
-  /* border-radius: 25%; */
+  flex-wrap: wrap;
+  margin-top: 75px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 40px;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 .headerText {
@@ -92,36 +74,20 @@ mark.pageTitle {
   font-weight: bolder;
   display: flex;
   flex-wrap: wrap;
-  /* padding-bottom: 5px; */
   padding-left: 35px;
   padding-top: 35px;
   padding-right: 35px;
-
 }
 
 .subHeader {
-  /*font-family: "Give You Glory", cursive, bolder;
-padding-bottom: 15px;
-*/
-font-family: "Caveat", cursive;
-color: #d58936;
+  font-family: "Caveat", cursive;
+  color: #d58936;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 35px;
   text-shadow: 1px 1px 2px rgb(1, 0, 0), 0 0 1em rgb(197, 197, 202), 0 0 0.2em rgb(97, 53, 4);
- /* text-shadow:1px 1px #3C1518;;
-*/}
-/*
-.labeltext{
-  color: #fffb46;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 25px;
-  text-shadow: 1px 1px 2px rgb(1, 0, 0), 0 0 1em rgb(197, 197, 202), 0 0 0.2em rgb(97, 53, 4);
 }
-*/
 
 .centralTextBox {
   margin-top: 20px;
@@ -132,23 +98,18 @@ color: #d58936;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), -5px 5px 9px rgba(0, 0, 0, 0.24);
 }
 
-.card-body{
+.card-body {
   text-align: center;
   margin-bottom: 0;
 }
 
-
 .formInput {
   display: flex;
-  /* margin-left: 250px; */
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  /* width: 600px; */
   align-items: center;
   margin-bottom: 25px;
-  /* font-family: "Give You Glory", cursive; */
-
 }
 
 .mainSearch {
@@ -163,10 +124,7 @@ color: #d58936;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* transition: all 0.5s ease-in-out; */
-
-  }
-  
+}
 
 .form-group {
   display: flex;
@@ -175,13 +133,10 @@ color: #d58936;
   align-items: center;
 }
 
-.form-control:hover, .form-control:hover {
+.form-control:hover,
+.form-control:hover {
   box-shadow: inset 0px 0px 8px rgb(247, 245, 247), 0 0 10px rgb(255, 179, 0);
-
-
 }
-
-
 
 .btn.btn-primary {
   display: flex;
@@ -190,10 +145,10 @@ color: #d58936;
   justify-content: center;
 }
 
-.btn.btn-warning:hover, .btn.btn-warning:hover {
+.btn.btn-warning:hover,
+.btn.btn-warning:hover {
   display: flex;
   box-shadow: inset 0px 0px 8px rgb(247, 245, 247), 0 0 10px rgb(255, 179, 0);
-
 }
 
 body {

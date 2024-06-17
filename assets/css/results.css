@@ -32,23 +32,12 @@
     padding: 5px;
     text-align: center;
 }
-/* Style for header */
-/* .header {
-    min-height: 50px;
-    padding: 20px;
-    text-align: right;
-    color: white;
-    font-size: 30px;
-    background: #3C1518;
-} */
-
 
 
 .topBarResults {
     display: flex;
     height: 100px;
     width: 100%;
-    /* background: #1d080a; */
     background-image: linear-gradient(#3C1518 19%, #1d080a 75%);
     flex-direction: row;
     align-content: center;
@@ -65,25 +54,19 @@
   border-radius: 50%;
   position: relative;
   top: 20px;
-
   display: flex;
-  /* min-height: 10px; */
   padding: 0px;
   text-align: center;
-  /* color: white; */
-  /* font-size: 10px; */
   justify-content: center;
   border: solid 5px #3C1518;
   border-radius: 50%;
   filter:drop-shadow(2px 4px 6px black);
-
 }
 
 .col {
     display: flex;
     flex-direction: column;
 }
-
 
 .titleLeft {
 display: flex;
