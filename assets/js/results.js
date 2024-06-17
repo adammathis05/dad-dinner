@@ -1,32 +1,4 @@
-// // DEPENDENCIES
-// const returnHome = document.getElementById('goBack');
 
-
-
-
-// // DATA
-
-
-
-
-
-
-// // FUNCTIONS
-
-// function homeRedirect() {
-//     window.location.href="index.html";
-
-// }
-
-
-
-
-// // USER INTERACTIONS 
-
-// returnHome.addEventListener('click', () => {
-//     homeRedirect()
-
-// });
 
 
 
@@ -113,7 +85,6 @@ function getJokes () {
                 
                 jokesArray.push(joke);    
 
-                //console.log("jokes 1", jokesArray);
             })
         )
     }
