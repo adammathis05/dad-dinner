@@ -1,14 +1,4 @@
-// DEPENDENCIES
-
-
-// fetch('https://www.themealdb.com/api/json/v1/1/random.php') 
-//     .then(function(response) {
-//         return response.json(); 
-//     })
-//     .then(function(data){
-//         console.log(data);
-//     })
-//       // testing fetch request  
+//DEPENDENCIES
     const Randombutton = $('#randomize')
     const ingredientFormEl = $('#ingredientForm')
     const ingredientInput =$('#ingredient-input')
@@ -20,9 +10,9 @@
         event.preventDefault();
         console.log("Did I work?")
         localStorage.setItem('mode', 'random')
-     // window.location.replace(RecipeURL)
+     
         $(location).attr('href', RecipeURL)
-        // document.location.replace(RecipeURL);
+     
         getRandommeal()
     }
     function redirectPageIngridient(event) {
