@@ -27,9 +27,6 @@ This project is licensed under GNU gpl v3
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-
 ## Features
 
 - A featured ingredient search, for all your cooking whims. (pulling from the mealdb API)
