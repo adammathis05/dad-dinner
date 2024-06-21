@@ -175,6 +175,7 @@ footer {
   width: 100%;
 
   min-height: 75px;
+  max-height: 90px;
   color: white;
   background-image: linear-gradient(#1d080a 19%, #3C1518 75%);
 }
