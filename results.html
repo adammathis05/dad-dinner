@@ -12,16 +12,20 @@
     
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-    <header class = topBarResults>
-        <button id="goBack" class = backButton>&#8678; Return Home</button>
-        <div class="headerImgResults"><img class ="m-0" src="assets/images/logo.png" alt="dad's dinner logo">
+    <header class="">
+        <div id="topBar" class="navbar">
+            <div class="container-fluid justify-content-center">
+                <button id="goBack" class ="backButton">&#8678; Return Home</button>
+                <div class="navbar-brand" href="#">
+                    <img id="logo" src="assets/images/logo.png" alt="dad's dinner logo" width="200"> 
+                </div> 
+            </div>
         </div>
+    </header>  
 
-    </header>
-
-    <main class="bg">
+    <main class="flex-grow-1 d-flex align-items-center" id="backgroundImage">
 
         <div class="container">
             <div class="row">
@@ -60,11 +64,11 @@
             </div>
         </div>
     </main>
-    <footer>
-        <ul class="list-inline mb-0 d-flex justify-content-evenly">
-            <li class="list-inline-item" id="footerListItem"><a id="footerLink" href="https://icanhazdadjoke.com/">Jokes courtesy of icanhazdadjokes</a></li>
+    <footer id="bottomBar">
+        <ul class="list-inline d-flex justify-content-evenly fixed-bottom">
+            <li class="list-inline-item" id="footerListItem"><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none" id="footerLink1" href="https://icanhazdadjoke.com/">Jokes courtesy of icanhazdadjokes</a></li>
             <li class="list-inline-item" id="footerListItem"><h4>Built by Group 3</h4></li>
-            <li class="list-inline-item" id="footerListItem"><a id="footerLink"  href="https://www.themealdb.com/">Recipes courtesy of TheMealDB</a></li>
+            <li class="list-inline-item" id="footerListItem"><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover  text-decoration-none" id="footerLink2"  href="https://www.themealdb.com/">Recipes courtesy of TheMealDB</a></li>
         </ul>
     </footer>
 
