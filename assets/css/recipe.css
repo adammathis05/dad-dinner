@@ -27,6 +27,8 @@
   background-color: white; /* Background color */
   transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
   margin: 20px; /* Space around the card */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .recipe-card img {
