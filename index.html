@@ -18,41 +18,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header class = "topBar">
-        <div class="headerImg "><img class ="m-0" src="assets/images/logo.png"g alt="dad's dinner logo">
+<body class="container">
+    <header id="topBar">
+        <div class="navbar navbar-light bg-light">
+            <div class="container-fluid justify-content-center">
+                <div class="navbar-brand" href="#">
+                    <img id="logo" src="assets/images/logo.png" alt="dad's dinner logo" width="200"> 
+                </div> 
+            </div>
         </div>
     </header>  
     
-    <main class="bg">
-        <div class = "titleText">
-            <h1 class = "headerText">
-                Welcome to Dad’s Dinner!
-            </h1>
-            <h4 class = "subHeader">
-                Take a little stress out of your day &#128513
-            </h4>
-            <div class="centralTextBox">
-                <h6 class="card-body">
-                    Enter an ingredient that's already in your fridge and we'll drop 
-                    a few recipe options – along with some dad jokes to keep the kiddos happy while you cook!
-                </h6>
-            </div>
+    <main class="container" id="backgroundImage">
+
+        <div class="mx-auto" id="dimmer">
+            <h1 class="text-center" id="headerText">Welcome to Dad’s Dinner!</h1>
+            <h4 class="text-center" id="subHeader">Take a little stress out of your day &#128513</h4>
+            <h6 class="mx-auto col-10 text-center" id="card-body">
+                Enter an ingredient that's already in your fridge and we'll drop a few recipe options – along with some dad jokes to keep the kiddos happy while you cook!
+            </h6>
             
+            <div class="mx-auto" id="formInput">
+                <form id="mainSearch">
+                    <div id="form-group">
+                        <label id="labeltext mb-1" for="ingredient-input">What's in Your Fridge?</label>
+                        <input id="ingredient-input" type="text" class="form-control" placeholder="Main Ingredient">
+                    </div>
+                    <button id="search" type="submit" class="btn btn-primary">Search</button>
+                </form>
+                <button id="randomize" type="submit" class="btn btn-warning">Randomize Me!</button>
+            </div>
         </div>
 
-        <div class = "formInput">
-            <form id="ingredientForm" class = mainSearch>
-                <div class="form-group">
-                    <label class = "labeltext mb-1" for="ingredient-input">What's in Your Fridge?</label>
-                    <input id="ingredient-input" type="text" class="form-control" placeholder="Main Ingredient">
-                </div>
-                <button id="search" type="submit" class="btn btn-primary">Search</button>
-                
-            </form>
-            <button id="randomize" type="submit" class="btn btn-warning">Randomize Me!</button>
-        </div>
-        
     </main>
     <footer>
         <ul class="list-inline mb-0 d-flex justify-content-evenly">
