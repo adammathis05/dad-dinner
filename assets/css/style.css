@@ -33,21 +33,22 @@ html, body {
 #dimmer {
   background-color: rgba(245, 245, 245, 0.8)
 }
-/*  
-.topBar {
-  display: flex;
-  height: 100px;
-  width: auto;
+ 
+#topBar {
+  min-height: 75px;
+  max-height: 90px;
   background-image: linear-gradient(#3C1518 19%, #1d080a 75%);
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
 }
-*/
+
 #logo {
+  position: relative; 
+  top: 10px;
+
   border-radius: 50%;
-  margin-top: 5px;
+  filter: drop-shadow(2px 4px 6px black);
+
+  width: 200px;
+  height: 200px;
 }
 
 /* .headerImg {
@@ -168,24 +169,16 @@ body {
   height: 75vh;
   display: flex;
   flex-direction: column;
-}
+} */
 
 footer {
-  left: 0;
-  bottom: 0;
   width: 100%;
 
-  position: fixed;
   min-height: 75px;
-  align-content: center;
-  bottom: 0;
   color: white;
   background-image: linear-gradient(#1d080a 19%, #3C1518 75%);
-
-  display: block;
-  text-align: center;
 }
-
+/* 
 #footerListItem {
   list-style: none;
 }
