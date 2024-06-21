@@ -51,6 +51,30 @@ html, body {
   height: 175px;
 }
 
+#headerText {
+  color: #3C1518;
+  text-shadow: 1px 1px 2px rgb(1, 0, 0), 0 0 1em rgb(197, 197, 202), 0 0 0.2em rgb(255, 179, 0);
+  font-weight: bolder;
+}
+
+#subHeader {
+  font-family: "Caveat", cursive;
+  color: #d58936;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px rgb(1, 0, 0), 0 0 1em rgb(197, 197, 202), 0 0 0.2em rgb(97, 53, 4);
+}
+
+#mainSearch {
+  border-color: #1d080a;
+  background-color: #3C1518;
+  color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), -5px 5px 9px rgba(0, 0, 0, 0.24);
+  border-radius: 20px;
+}
+
 /* .headerImg {
   width: 200px;
   margin-top: 90px;

@@ -34,22 +34,24 @@
         <div class="mx-auto p-3" id="dimmer">
             <h1 class="text-center p-2" id="headerText">Welcome to Dad’s Dinner!</h1>
             <h4 class="text-center p-2" id="subHeader">Take a little stress out of your day &#128513</h4>
-            <h6 class="mx-auto p-2 col-10 text-center" id="card-body">
+            <h6 class="mx-auto p-2 mb-3 col-10 text-center" id="card-body">
                 Enter an ingredient that's already in your fridge and we'll drop a few recipe options – along with some dad jokes to keep the kiddos happy while you cook!
             </h6>
             
             <div class="mx-auto" id="formInput">
-                <form class="text-center" id="mainSearch">
-                    <div id="form-group">
+                <form class="mx-auto col-sm-4" id="mainSearch">
+                    <div class="text-center" id="form-group">
                         <label class="p-2" id="labeltext" for="ingredient-input">What's in Your Fridge?</label>
-                        <div class="col-sm-3 p-2 mx-auto">
-                            <input id="ingredient-input" type="text" class="form-control text-center " placeholder="Main Ingredient">
+                        <div class="col-sm-8 p-1 mx-auto">
+                            <input id="ingredient-input" type="text" class="form-control text-center" placeholder="Main Ingredient">
                         </div>
                     </div>
-                    <button id="search" type="submit" class="btn btn-primary m-2">Search</button>
+                    <div class="text-center">
+                        <button id="search" type="submit" class="btn btn-primary m-2">Search</button>
+                    </div>
                 </form>
                 <div class="text-center">
-                    <button id="randomize" type="submit" class="btn btn-warning">Randomize Me!</button>
+                    <button id="randomize" type="submit" class="btn btn-warning mt-3">Randomize Me!</button>
                 </div>
             </div>
         </div>
