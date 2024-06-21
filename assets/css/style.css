@@ -215,6 +215,7 @@ footer {
   max-height: 150px;
   color: white;
   background-image: linear-gradient(#1d080a 19%, #3C1518 75%);
+  margin-top: 75px;
 }
 /* 
 #footerListItem {
