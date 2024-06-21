@@ -39,14 +39,18 @@
             </h6>
             
             <div class="mx-auto" id="formInput">
-                <form id="mainSearch">
+                <form class="text-center" id="mainSearch">
                     <div id="form-group">
-                        <label id="labeltext mb-1" for="ingredient-input">What's in Your Fridge?</label>
-                        <input id="ingredient-input" type="text" class="form-control" placeholder="Main Ingredient">
+                        <label id="labeltext" for="ingredient-input">What's in Your Fridge?</label>
+                        <div class="col-3 mx-auto">
+                            <input id="ingredient-input" type="text" class="form-control text-center" placeholder="Main Ingredient">
+                        </div>
                     </div>
                     <button id="search" type="submit" class="btn btn-primary">Search</button>
                 </form>
-                <button id="randomize" type="submit" class="btn btn-warning">Randomize Me!</button>
+                <div class="text-center">
+                    <button id="randomize" type="submit" class="btn btn-warning">Randomize Me!</button>
+                </div>
             </div>
         </div>
 
