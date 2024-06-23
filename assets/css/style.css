@@ -14,31 +14,81 @@
   font-style: normal;
 }
 
-.bg {
+html, body {
+  height: 100%;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+#backgroundImage {
   background-image: url("../images/background-light.jpg");
+  width: 100%; 
+  height: 100vh;
+  background-repeat: no-repeat; 
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: calc(100vh - 75px);
 }
 
-.topBar {
-  display: flex;
-  height: 100px;
-  width: auto;
+#dimmer {
+  background-color: rgba(245, 245, 245, 0.8)
+}
+ 
+#topBar {
+  min-height: 75px;
+  max-height: 90px;
   background-image: linear-gradient(#3C1518 19%, #1d080a 75%);
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-img {
+#logo {
+  position: relative; 
+  top: 10px;
+
   border-radius: 50%;
-  margin-top: 5px;
+  filter: drop-shadow(2px 4px 6px black);
+
+  width: 175px;
+  height: 175px;
 }
 
-.headerImg {
+#logoResults {
+  position: relative; 
+  top: 10px;
+
+  border-radius: 50%;
+  filter: drop-shadow(2px 4px 6px black);
+
+  width: 100px;
+  height: 100px;
+
+  margin-right: 20px;
+}
+
+#headerText {
+  color: #3C1518;
+  text-shadow: 1px 1px 2px rgb(1, 0, 0), 0 0 1em rgb(197, 197, 202), 0 0 0.2em rgb(255, 179, 0);
+  font-weight: bolder;
+}
+
+#subHeader {
+  font-family: "Caveat", cursive;
+  color: #d58936;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px rgb(1, 0, 0), 0 0 1em rgb(197, 197, 202), 0 0 0.2em rgb(97, 53, 4);
+}
+
+#ingredientForm {
+  border-color: #1d080a;
+  background-color: #3C1518;
+  color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), -5px 5px 9px rgba(0, 0, 0, 0.24);
+  border-radius: 20px;
+}
+
+/* .headerImg {
   width: 200px;
   margin-top: 90px;
   height: 200px;
@@ -156,24 +206,18 @@ body {
   height: 75vh;
   display: flex;
   flex-direction: column;
-}
+} */
 
 footer {
-  left: 0;
-  bottom: 0;
   width: 100%;
 
-  position: fixed;
   min-height: 75px;
-  align-content: center;
-  bottom: 0;
+  max-height: 150px;
   color: white;
   background-image: linear-gradient(#1d080a 19%, #3C1518 75%);
-
-  display: block;
-  text-align: center;
+  margin-top: 75px;
 }
-
+/* 
 #footerListItem {
   list-style: none;
 }
@@ -181,4 +225,4 @@ footer {
 #footerLink {
   text-decoration: none;
   color: white;
-}
+} */

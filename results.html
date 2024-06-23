@@ -12,21 +12,18 @@
     
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-    <header class = topBarResults>
-        <button id="goBack" class = backButton>&#8678; Return Home</button>
-        <div class="headerImgResults"><img class ="m-0" src="assets/images/logo.png" alt="dad's dinner logo">
-        </div>
+    <header id="topBar" class="navbar d-flex justify-content-space-between align-content-center">
+        <button id="goBack" class="backButton mx-4">&#8678; Return Home</button>
+        <img id="logoResults" src="assets/images/logo.png" alt="dad's dinner logo" width="200"> 
+    </header>  
 
-    </header>
+    <main class="flex-grow-1 d-flex align-items-center" id="backgroundImageResults">
 
-    <main class="bg">
-
-        <div class="container">
+        <div class="container mx-auto">
             <div class="row">
                 <div id="recipes-container" class="col-sm">
-                    <!-- <h2 class = "titleLeft">"Your Recipes"</h2> -->
                     <div id="recipes" class="col">
                         <div id="recipe-card" class="col"></div>
                     </div>
@@ -34,7 +31,6 @@
 
                 <div id="jokes-container" class="col-sm-4">
                     <div id="jokes" class="jokesCol col">
-                        <!-- <h2 class = "titleRight">"Dad Jokes"</h2> -->
                         <!-- Button trigger modal -->
                         <button id="jokesButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jokesModal">
                             Click here for Dad Jokes!
@@ -60,17 +56,13 @@
             </div>
         </div>
     </main>
-    <footer>
-        <ul class="list-inline mb-0 d-flex justify-content-evenly">
-            <li class="list-inline-item" id="footerListItem"><a id="footerLink" href="https://icanhazdadjoke.com/">Jokes courtesy of icanhazdadjokes</a></li>
+    <footer class="" id="bottomBar">
+        <ul class="list-inline d-flex justify-content-evenly">
+            <li class="list-inline-item" id="footerListItem"><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none" id="footerLink1" href="https://icanhazdadjoke.com/">Jokes courtesy of icanhazdadjokes</a></li>
             <li class="list-inline-item" id="footerListItem"><h4>Built by Group 3</h4></li>
-            <li class="list-inline-item" id="footerListItem"><a id="footerLink"  href="https://www.themealdb.com/">Recipes courtesy of TheMealDB</a></li>
+            <li class="list-inline-item" id="footerListItem"><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover  text-decoration-none" id="footerLink2"  href="https://www.themealdb.com/">Recipes courtesy of TheMealDB</a></li>
         </ul>
     </footer>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
